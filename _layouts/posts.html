@@ -1,0 +1,48 @@
+---
+layout: page
+---
+
+{% assign catrefs = "" %}
+{% for cat in site.data.categories %}
+  {% assign posts = site.categories[cat.ref] | where_exp:"post", "post.lang == page.lang" %}
+  {% if posts.size > 0 %}
+    {% assign _arr = cat.ref | split: " " %}
+    {% assign catrefs = catrefs | concat: _arr %}
+  {% endif %}
+{% endfor %}
+
+{% for catref in catrefs %}
+{% assign _cat = site.data.categories | where_exp:"cat", "cat.ref == catref" %}
+{% assign cat = _cat[0] %}
+{% assign posts = site.categories[catref] | where_exp:"post", "post.lang == page.lang" %}
+{% if posts.size > 0 %}
+  <h2 id="{{ catref }}">
+    {% if cat.name[page.lang] %}
+      {{ cat.name[page.lang] | capitalize }}
+    {% else %}
+      {{ cat.name['default'] | capitalize }}
+    {% endif %}
+  </h2>
+  <ul class="posts-list">
+  {% for post in posts %}
+    <li class="post-title">
+      <strong>
+        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a>
+      </strong>
+      <span class="post-date">
+        {% case page.lang %}
+          {% when 'zh' %}
+          - {{ post.date | date: "%Y年%-m月%-d日" }}
+          {% when 'en' %}
+          - {{ post.date | date: "%B %-d, %Y" }}
+          {% else %}
+          - {{ post.date | date: "%Y-%-m-%-d" }}
+        {% endcase %}
+      </span>
+    </li>
+  {% endfor %}
+  </ul>
+  {% if forloop.last == false %}<hr>{% endif %}
+{% endif %}
+{% endfor %}
+<br>

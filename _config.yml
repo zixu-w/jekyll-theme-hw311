@@ -1,0 +1,117 @@
+exclude:
+  - "/vendor/"
+
+plugins:
+  - jemoji
+
+# Site settings
+title: '<website title>'
+subtitle: '<website subtitle>'
+email: '<your email>'
+name: '<your name>'
+description: '<website description>'
+# Base URL of site (i.e. /blog). It should always start with a slash,
+# and never end with a slash. Set it to a blank value if hosting at the
+# root of your server.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: '<website url>' # the base hostname & protocol for your site
+cover: "/assets/header_image.jpg"
+logo: "/assets/logo.png"
+
+# Build settings
+markdown: kramdown
+highlightjs_theme: "atom-one-dark"
+
+kramdown:
+  footnote_backlink: ^
+  math_engine: mathjax
+
+permalink: pretty
+
+inter_post_navigation: true
+
+# Disqus comments
+disqus_shortname: '<disqus handle>'
+
+# Google analytics
+ga_tracking_id: '<ga tracking id>'
+
+# Social icons and sharing options
+#
+# Social settings are used in two places:
+# * In the footer, as links to your personal profiles
+# * After each blog post for sharing widgets
+#
+# Example:
+#
+# social:
+#   - name: Twitter                         # Name of the service
+#     icon: twitter                         # Font Awesome icon to use (minus fa- prefix)
+#     username: "@TheBenCentra"             # (User) Name to display in the footer link
+#     url: https://twitter.com/TheBenCentra # URL of your profile (leave blank to not display in footer)
+#     desc: Follow me on Twitter            # Description to display as link title, etc
+#     share: true                           # Include in the "Share" section of posts
+social:
+  - name: GitHub
+    icon: github
+    username: LaytonW
+    url: https://github.com/LaytonW
+    desc: Follow me on GitHub
+    share: false
+
+  - name: LinkedIn
+    icon: linkedin
+    username: Zixu Wang
+    url: https://www.linkedin.com/in/zixuwang/
+    desc: Connect with me on LinkedIn
+    share: true
+
+  - name: Reddit
+    icon: reddit
+    username:
+    url:
+    desc: Share to Reddit
+    share: true
+
+  - name: Pinterest
+    icon: pinterest
+    username:
+    url:
+    desc: Share to Pinterest
+    share: true
+
+  - name: Google+
+    icon: google-plus
+    username:
+    url:
+    desc: Share to Google+
+    share: true
+
+  - name: Twitter
+    icon: twitter
+    username:
+    url:
+    desc: Share to Twitter
+    share: true
+
+  - name: Facebook
+    icon: facebook
+    username:
+    url:
+    desc: Share to Facebook
+    share: true
+
+# Social sharing protocols
+# These are for automatically generating sharing metadata for FB and Twitter
+# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
+protocols:
+    fb_image: "/assets/logo.png"
+    fb_image_width: 612
+    fb_image_height: 605
+    fb_image_type: "image/png"
+
+    twitter_image: "/assets/logo.png"
+
+    os_repo: "https://github.com/LaytonW/jekyll-theme-hw311"
+    os_rcs_type: "git"
+    os_src: "git@github.com:LaytonW/jekyll-theme-hw311.git"

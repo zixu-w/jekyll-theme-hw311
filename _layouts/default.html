@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      {{ content }}
+      {% unless page.no_back_top %}
+      <a href="javascript:void(0);" id="top">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-angle-double-up fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+      {% endunless %}
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+  {% unless page.no_back_top %}
+  <script type="text/javascript">
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("top").style.display = "block";
+      } else {
+        document.getElementById("top").style.display = "none";
+      }
+    }
+
+    $('#top').click(function(){
+      $('html, body').animate({
+        scrollTop: 0
+      }, 200);
+    });
+  </script>
+  {% endunless %}
+
+</html>

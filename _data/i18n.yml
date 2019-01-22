@@ -1,0 +1,68 @@
+title:
+  default: HW311
+
+subtitle:
+  default: "&mdash; Where I learn, code, and live."
+
+description:
+  default: "&mdash; Where I learn, code, and live."
+
+in:
+  default: in
+  en: in
+  zh: 类别：
+
+share:
+  default: 'Share: '
+  en: 'Share: '
+  zh: 分享：
+
+search:
+  default: Search
+  en: Search
+  zh: 搜索
+
+no_result:
+  default: 'No result'
+  en: 'No result'
+  zh: 无结果
+
+about:
+  default: About
+  en: About
+  zh: 关于
+
+posts:
+  default: Posts
+  en: Posts
+  zh: 文章
+
+contact:
+  default: Contact
+  en: Contact
+  zh: 联系
+
+language:
+  default: Language
+  en: Language
+  zh: 语言
+
+reading:
+  default: "I'm reading"
+  en: "I'm reading"
+  zh: 我在读
+
+disqus_noscript:
+  default: 'Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>'
+  en: 'Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>'
+  zh: '在<a href="http://disqus.com/?ref_noscript">Disqus</a>上讨论，请启用JavaScript。'
+
+disqus_power:
+  default: 'comments powered by <span class="logo-disqus">Disqus</span>'
+  en: 'comments powered by <span class="logo-disqus">Disqus</span>'
+  zh: '在<span class="logo-disqus">Disqus</span>上讨论'
+
+sitemap:
+  default: 'Site Map'
+  en: 'Site Map'
+  zh: 站点地图

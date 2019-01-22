@@ -1,0 +1,13 @@
+- title:
+    default: "Jekyll"
+  url: "https://jekyllrb.com/"
+
+- title:
+    default: "GitHub Pages"
+  url: "https://pages.github.com/"
+
+- title:
+    default: "Jekyll theme: HW311"
+    en: "Jekyll theme: HW311"
+    zh: "Jekyll主题：HW311"
+  url: "https://github.com/LaytonW/jekyll-theme-hw311"
