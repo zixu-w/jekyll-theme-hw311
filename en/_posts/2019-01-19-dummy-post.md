@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dummy post"
-date:   2018-01-19 01:31:14
+date:   2019-01-19 01:31:14
 author: Zixu Wang
 categories: Misc
 cover:  "/assets/header_image.jpg"

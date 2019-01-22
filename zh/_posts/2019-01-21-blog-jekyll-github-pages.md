@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "使用Jekyll和GitHub Pages搭建博客"
-date:   2018-01-21 21:20:39
+date:   2019-01-21 21:20:39
 author: Zixu Wang
 categories: Jekyll
 tags: blog 博客
