@@ -4,7 +4,7 @@ A simple Jekyll theme modified from [Centrarium](https://github.com/bencentra/ce
 
 See [the original README](Centrarium_README.md) for more info.
 
-I use this theme on [my own blog](https://hw311.me/en/) hosted on GitHub Pages,
+I use this theme on [my own blog](https://hw311.me) hosted on GitHub Pages,
 please check for a demo.
 
 ## Features
