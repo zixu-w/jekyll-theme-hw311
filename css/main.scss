@@ -16,6 +16,12 @@
   margin-bottom: 2em;
 }
 
+article.post-content {
+  a:not(.normal-color) {
+    color: cadetblue;
+  }
+}
+
 .footernote {
   margin-top: 2em;
   float: left;
