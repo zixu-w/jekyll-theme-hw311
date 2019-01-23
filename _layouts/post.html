@@ -114,7 +114,7 @@ layout: default
       {% for post in site.posts %}
         {% if post.lang == page.lang %}
           {% if prev %}
-            <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+            <a href="{{ post.url | prepend: site.baseurl }}" title="{% if post.html_title %}{{ post.html_title }}{% else %}{{ post.title }}{% endif %}">
               <div class="post-nav-button">
                 <span class="fa-lg">
                   <i class="post-nav-arrow fa fa-angle-double-left"></i>
@@ -135,7 +135,7 @@ layout: default
       {% for post in site.posts reversed %}
         {% if post.lang == page.lang %}
           {% if next %}
-            <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+            <a href="{{ post.url | prepend: site.baseurl }}" title="{% if post.html_title %}{{ post.html_title }}{% else %}{{ post.title }}{% endif %}">
               <div class="post-nav-button">
                 <span class="page-number">{{ post.title }}</span>
                 <span class="fa-lg">

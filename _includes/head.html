@@ -4,7 +4,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    {% if page.title %}
+    {% if page.html_title %}
+      {{ page.html_title }}
+    {% elsif page.title %}
       {{ page.title }}
     {% else %}
       {% if site.data.i18n['title'][page.lang] %}
@@ -14,7 +16,8 @@
       {% endif %}
     {% endif %}
   </title>
-  <meta name="title" content="{% if page.title %}{{ page.title }}
+  <meta name="title" content="{% if page.html_title %}{{ page.html_title }}
+  {% elsif page.title %}{{ page.title }}
   {% else %}
     {% if site.data.i18n['title'][page.lang] %}
       {{ site.data.i18n['title'][page.lang] }}
@@ -90,7 +93,7 @@
   {% else %}
     {{ site.data.i18n['title']['default'] }}
   {% endif %}" />
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{% if site.data.i18n['title'][page.lang] %}
+  <meta property="og:title" content="{% if page.html_title %}{{ page.html_title }}{% elsif page.title %}{{ page.title }}{% else %}{% if site.data.i18n['title'][page.lang] %}
     {{ site.data.i18n['title'][page.lang] }}
   {% else %}
     {{ site.data.i18n['title']['default'] }}
@@ -105,7 +108,7 @@
   {% if site.protocols.twitter_image %}
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{% if site.data.i18n['title'][page.lang] %}
+  <meta name="twitter:title" content="{% if page.html_title %}{{ page.html_title }}{% elsif page.title %}{{ page.title }}{% else %}{% if site.data.i18n['title'][page.lang] %}
     {{ site.data.i18n['title'][page.lang] }}
   {% else %}
     {{ site.data.i18n['title']['default'] }}

@@ -34,7 +34,7 @@ ref: index
       {% for post in posts %}
       <li>
         <h2 class="post-title">
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}" title="{% if post.html_title %}{{ post.html_title }}{% else %}{{ post.title }}{% endif %}">
             {{ post.title }}
           </a>
         </h2>

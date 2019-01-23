@@ -6,6 +6,7 @@ layout: null
   {% if post.lang == 'zh' %}
     {
       "title"      : {{ post.title | jsonify }},
+      "html_title" : {{ post.html_title | jsonify }},
       "categories" : "{{ post.categories | join: " " }}",
       "tags"       : "{{ post.tags | join: " " }}",
       "url"        : "{{ site.baseurl }}{{ post.url }}",
@@ -16,6 +17,7 @@ layout: null
   {% else %}
     {
       "title"      : "",
+      "html_title" : "",
       "categories" : "",
       "tags"       : "",
       "url"        : "",

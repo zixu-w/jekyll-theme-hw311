@@ -36,6 +36,13 @@
     noResultsText: "{% if site.data.i18n['no_result'][page.lang] %}{{ site.data.i18n['no_result'][page.lang] }}{% else %}{{ site.data.i18n['no_result']['default'] }}{% endif %}",
     templateMiddleware: function(prop, value, template) {
       MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    },
+    success: function (json) {
+      for (var i = 0; i < json.length; i++) {
+        if (json[i].html_title != null && json[i].html_title !== "") {
+          json[i].title = json[i].html_title;
+        }
+      }
     }
   });
 </script>
