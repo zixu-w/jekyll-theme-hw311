@@ -34,9 +34,6 @@
     searchResultTemplate: '<li class="nav-link"><a href="{url}" title="{title}">{title}</a></li>',
     json: '/{{ page.lang }}/search.json',
     noResultsText: "{% if site.data.i18n['no_result'][page.lang] %}{{ site.data.i18n['no_result'][page.lang] }}{% else %}{{ site.data.i18n['no_result']['default'] }}{% endif %}",
-    templateMiddleware: function(prop, value, template) {
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-    },
     success: function (json) {
       for (var i = 0; i < json.length; i++) {
         if (json[i].html_title != null && json[i].html_title !== "") {
