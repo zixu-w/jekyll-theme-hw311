@@ -6,6 +6,7 @@ author: Zixu Wang
 categories: Misc
 cover:  "/assets/header_image.jpg"
 lang: zh
+ref: dummy-post
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Bibendum neque egestas congue quisque egestas. Lorem ipsum dolor sit amet consectetur adipiscing elit duis. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Pharetra magna ac placerat vestibulum lectus. Viverra mauris in aliquam sem fringilla. In hac habitasse platea dictumst. Orci sagittis eu volutpat odio facilisis mauris sit. Felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Euismod nisi porta lorem mollis aliquam. At tellus at urna condimentum. Fames ac turpis egestas integer eget aliquet. Montes nascetur ridiculus mus mauris. Ut sem viverra aliquet eget sit amet tellus. In arcu cursus euismod quis viverra nibh cras pulvinar mattis. Sed libero enim sed faucibus turpis. Iaculis at erat pellentesque adipiscing.

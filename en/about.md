@@ -4,6 +4,7 @@ title: About
 permalink: /en/about/
 lang: en
 no_back_top: true
+ref: about
 ---
 
 This site is powered by [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/).

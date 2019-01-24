@@ -4,6 +4,7 @@ title: 关于
 permalink: /zh/about/
 lang: zh
 no_back_top: true
+ref: about
 ---
 
 此网站由[Jekyll](https://jekyllrb.com/)及[GitHub Pages](https://pages.github.com/)驱动。

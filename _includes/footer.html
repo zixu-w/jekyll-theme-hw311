@@ -82,7 +82,12 @@
         {% endif %}
       </strong></p>
       <ul>
-        <li class="nav-link"><a class="rm-pad-right" href="{{ page.url | replace:'zh','en' }}">En</a>|<a href="{{ page.url | replace:'en','zh' }}">中</a></li>
+        {% assign pages = site.pages | where:"ref", page.ref %}
+        {% assign posts = site.posts | where:"ref", page.ref %}
+        {% assign ps = pages | concat: posts %}
+        {% assign en_page = ps | where:"lang", "en" %}
+        {% assign zh_page = ps | where:"lang", "zh" %}
+        <li class="nav-link"><a class="rm-pad-right" href="{% if en_page.size > 0 %}{{ en_page[0].url }}{% else %}/404.html{% endif %}">En</a>|<a href="{% if zh_page.size > 0 %}{{ zh_page[0].url }}{% else %}/404.html{% endif %}">中</a></li>
       </ul>
     </div>
 
