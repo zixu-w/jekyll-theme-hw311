@@ -3,6 +3,7 @@ exclude:
 
 plugins:
   - jemoji
+  - jekyll-sitemap
 
 # Site settings
 title: '<website title>'
