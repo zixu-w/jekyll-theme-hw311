@@ -133,4 +133,6 @@
   <!-- Site styles -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title=
+  "{% if site.data.i18n['title'][page.lang] %}{{ site.data.i18n['title'][page.lang] }}{% else %}{{ site.data.i18n['title']['default'] }}{% endif %}" href="{{ site.url }}{{ site.baseurl }}/{{ page.lang }}/feed.xml"/>
 </head>
