@@ -89,6 +89,14 @@
         {% assign zh_page = ps | where:"lang", "zh" %}
         <li class="nav-link"><a class="rm-pad-right" href="{% if en_page.size > 0 %}{{ en_page[0].url }}{% else %}/404.html{% endif %}">En</a>|<a href="{% if zh_page.size > 0 %}{{ zh_page[0].url }}{% else %}/404.html{% endif %}">中</a></li>
       </ul>
+      <br>
+      <p class="rss-subscribe text"><strong>
+        {% if site.data.i18n['subscribe_via'][page.lang] %}
+          {{ site.data.i18n['subscribe_via'][page.lang] }}
+        {% else %}
+          {{ site.data.i18n['subscribe_via']['default'] }}
+        {% endif %}&nbsp;<a href="/{{ page.lang }}/feed.xml">
+          <i class="fa fa-rss-square fa-lg"></i> RSS</a></strong></p>
     </div>
 
     <div class="footernote">

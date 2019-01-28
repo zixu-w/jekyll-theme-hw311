@@ -66,3 +66,8 @@ sitemap:
   default: 'Site Map'
   en: 'Site Map'
   zh: 站点地图
+
+subscribe_via:
+  default: 'Subscribe via'
+  en: 'Subscribe via'
+  zh: '订阅：'

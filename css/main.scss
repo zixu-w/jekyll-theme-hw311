@@ -136,10 +136,6 @@ tt, code, kbd, samp {
   }
 }
 
-.share {
-  width: 100% !important;
-}
-
 .rm-pad-right {
   padding-right: 0 !important;
 }
@@ -148,6 +144,9 @@ tt, code, kbd, samp {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.site-signature {
   a:link {
     text-decoration: none;
   }
