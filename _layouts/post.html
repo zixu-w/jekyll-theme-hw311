@@ -63,7 +63,7 @@ layout: default
       {{ site.data.i18n['subscribe_via'][page.lang] }}
     {% else %}
       {{ site.data.i18n['subscribe_via']['default'] }}
-    {% endif %}&nbsp;<a href="/{{ page.lang }}/feed.xml">
+    {% endif %}&nbsp;<a href="/{{ page.lang }}/feed.xml" onclick="ga('send', 'event', 'RSS', 'subscribe');">
       <i class="fa fa-rss-square fa-lg"></i> RSS</a></strong></p>
 </section>
 
@@ -79,41 +79,43 @@ layout: default
     {% capture full_url %}{{ site.url }}{{ site.baseurl }}{{ page.url }}{% endcapture %}
     {% if social.name == "Twitter" and social.share == true %}
       <a href="//twitter.com/share?text={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}&via={{social.username}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+        onclick="ga('send', 'social', 'Twitter', 'share', '{{ full_url }}'); window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
         <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
       </a>
     {% endif %}
     {% if social.name == "Facebook" and social.share == true %}
       <a href="//www.facebook.com/sharer.php?t={{ page.title | cgi_escape }}&u={{ full_url | cgi_escape}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+        onclick="ga('send', 'social', 'Facebook', 'share', '{{ full_url }}'); window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
         <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
       </a>
     {% endif %}
     {% if social.name == "Google+" and social.share == true %}
       <a href="//plus.google.com/share?title={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+        onclick="ga('send', 'social', 'Google+', 'share', '{{ full_url }}'); window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
         <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
       </a>
     {% endif %}
     {% if social.name == "LinkedIn" and social.share == true %}
       <a href="//www.linkedin.com/shareArticle?mini=true&url={{ full_url | cgi_escape}}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+        onclick="ga('send', 'social', 'LinkedIn', 'share', '{{ full_url }}'); window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
         <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
       </a>
     {% endif %}
     {% if social.name == "Pinterest" and social.share == true %}
       <a href="//www.pinterest.com/pin/create/button/?description={{ page.title | cgi_escape }}&url={{ full_url | cgi_escape}}&media={{ site.url }}{% if page.cover %}{{ page.cover | prepend: site.baseurl  }}{% elsif site.cover %}{{ site.cover | prepend: site.baseurl }}{% else %}{{ site.logo | prepend: site.baseurl }}{% endif %}"
-        onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
+        onclick="ga('send', 'social', 'Pinterest', 'share', '{{ full_url }}'); window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
         <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
       </a>
     {% endif %}
     {% if social.name == "Reddit" and social.share == true %}
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('{{ full_url }}') + '&title={{page.title}}'; return false">
+      <a href="//www.reddit.com/submit"
+        onclick="ga('send', 'social', 'Reddit', 'share', '{{ full_url }}'); window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('{{ full_url }}') + '&title={{page.title}}'; return false">
         <i class="fa fa-{{ social.icon | remove_first: '-square' }}-square fa-lg"></i>
       </a>
     {% endif %}
     {% if social.name == "Hacker News" and social.share == true %}
-      <a href="//news.ycombinator.com/submitlink" onclick="window.location = '//news.ycombinator.com/submitlink?u=' + encodeURIComponent('{{ full_url }}') + '&t={{page.title}}'; return false">
+      <a href="//news.ycombinator.com/submitlink"
+        onclick="ga('send', 'social', 'Hacker News', 'share', '{{ full_url }}'); window.location = '//news.ycombinator.com/submitlink?u=' + encodeURIComponent('{{ full_url }}') + '&t={{page.title}}'; return false">
         <i class="fa fa-{{ social.icon | remove_first: '-square' }} fa-lg"></i>
       </a>
     {% endif %}

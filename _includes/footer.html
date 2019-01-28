@@ -95,7 +95,7 @@
           {{ site.data.i18n['subscribe_via'][page.lang] }}
         {% else %}
           {{ site.data.i18n['subscribe_via']['default'] }}
-        {% endif %}&nbsp;<a href="/{{ page.lang }}/feed.xml">
+        {% endif %}&nbsp;<a href="/{{ page.lang }}/feed.xml" onclick="ga('send', 'event', 'RSS', 'subscribe');">
           <i class="fa fa-rss-square fa-lg"></i> RSS</a></strong></p>
     </div>
 
