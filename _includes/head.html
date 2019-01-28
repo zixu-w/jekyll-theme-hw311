@@ -135,4 +135,18 @@
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title=
   "{% if site.data.i18n['title'][page.lang] %}{{ site.data.i18n['title'][page.lang] }}{% else %}{{ site.data.i18n['title']['default'] }}{% endif %}" href="{{ site.url }}{{ site.baseurl }}/{{ page.lang }}/feed.xml"/>
+
+  {% assign pages = site.pages | where:"ref", page.ref %}
+  {% assign posts = site.posts | where:"ref", page.ref %}
+  {% assign ps = pages | concat: posts %}
+  {% assign en_page = ps | where:"lang", "en" %}
+  {% assign zh_page = ps | where:"lang", "zh" %}
+
+  {% if zh_page.size > 0 %}
+  <link rel="alternate" hreflang="zh" href="{{ site.url }}{{ site.baseurl }}{{ zh_page[0].url }}">
+  {% endif %}
+  {% if en_page.size > 0 %}
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ site.baseurl }}{{ en_page[0].url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ en_page[0].url }}">
+  {% endif %}
 </head>
