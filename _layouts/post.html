@@ -176,7 +176,7 @@ layout: default
     var disqus_shortname = '{{ site.disqus_shortname }}';
     var disqus_config = function () {
       this.language = "{{ page.lang }}";
-      this.page.identifier = "{{ page.ref }}";
+      this.page.identifier = "{{ page.ref }}-{{ page.lang }}";
       this.page.url = "{{ site.url }}{{ site.baseurl }}{{ page.url }}";
       this.page.title = "{% if page.html_title %}{{ page.html_title }}{% else %}{{ page.title }}{% endif %}";
     };
