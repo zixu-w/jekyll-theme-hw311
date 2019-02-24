@@ -31,6 +31,9 @@
   {% else %}
     {{ site.data.i18n['description']['default'] }}
   {% endif %}{% endif %}">
+  {% if page.tags %}
+  <meta name="keywords" content="{{ page.tags | join: ',' | strip_html | strip_newlines }}">
+  {% endif %}
   {% if site.name %}
   <meta name="author" content="{{ site.name }}">
   <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}">
