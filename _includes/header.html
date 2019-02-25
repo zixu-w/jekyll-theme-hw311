@@ -31,7 +31,7 @@
         {% assign ps = pages | concat: posts %}
         {% assign en_page = ps | where:"lang", "en" %}
         {% assign zh_page = ps | where:"lang", "zh" %}
-        <li class="nav-link"><a class="rm-pad-right" href="{% if en_page.size > 0 %}{{ en_page[0].url }}{% else %}/404.html{% endif %}">En</a>|<a href="{% if zh_page.size > 0 %}{{ zh_page[0].url }}{% else %}/404.html{% endif %}">中</a></li>
+        <li class="nav-link"><a class="rm-pad-right" href="{% if en_page.size > 0 %}{{ en_page[0].url }}{% else %}/not-found{% endif %}">En</a>|<a href="{% if zh_page.size > 0 %}{{ zh_page[0].url }}{% else %}/not-found{% endif %}">中</a></li>
       </ul>
     </nav>
   </div>
