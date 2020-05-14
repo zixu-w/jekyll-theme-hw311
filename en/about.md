@@ -10,7 +10,7 @@ ref: about
 This site is powered by [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/).
 
 Theme made by [bencentra](https://github.com/bencentra/centrarium), and modified
-by [Zixu Wang](https://github.com/LaytonW/jekyll-theme-hw311).
+by [Zixu Wang](https://github.com/zixu-w/jekyll-theme-hw311).
 
 Website icon made by [Freepik](https://www.freepik.com/) from [Flaticon](https://www.flaticon.com/), licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/).
 

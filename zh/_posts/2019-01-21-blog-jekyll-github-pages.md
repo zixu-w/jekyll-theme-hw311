@@ -161,7 +161,7 @@ Jekyll的README里介绍了其设计哲学[^8]，我觉得非常贴近我们开�
 
 ## 使用现有的主题
 
-如果不想自己编写模板和样式，网上有非常多的开源主题可以直接使用，比如[JekyllThemes.org](http://jekyllthemes.org/){:target='_blank'}和[JekyllThemes.io](https://jekyllthemes.io/){:target='_blank'}. 我的这个网站就是基于[Centrarium主题](https://github.com/bencentra/centrarium){:target='_blank'}修改而成。鉴于我做了很多修改，也自己加了不少功能，我也整理了一个主题发布到了GitHub上：[Jekyll-Theme-HW311](https://github.com/LaytonW/jekyll-theme-hw311){:target='_blank'}，喜欢的欢迎fork和star。主要的特性有：
+如果不想自己编写模板和样式，网上有非常多的开源主题可以直接使用，比如[JekyllThemes.org](http://jekyllthemes.org/){:target='_blank'}和[JekyllThemes.io](https://jekyllthemes.io/){:target='_blank'}. 我的这个网站就是基于[Centrarium主题](https://github.com/bencentra/centrarium){:target='_blank'}修改而成。鉴于我做了很多修改，也自己加了不少功能，我也整理了一个主题发布到了GitHub上：[Jekyll-Theme-HW311](https://github.com/zixu-w/jekyll-theme-hw311){:target='_blank'}，喜欢的欢迎fork和star。主要的特性有：
 
 - 文章搜索
 - 简单的多语言支持
@@ -172,7 +172,7 @@ Jekyll的README里介绍了其设计哲学[^8]，我觉得非常贴近我们开�
 - 使用Disqus的文章评论
 - Google Analytics分析
 
-要使用这个模板，先在GitHub上fork一份我的主题仓库（[Jekyll-Theme-HW311](https://github.com/LaytonW/jekyll-theme-hw311){:target='_blank'}）到你自己的GitHub账户下，然后把重命名成 `<username>.github.io`（用你的GitHub用户名替换 `<username>`）。
+要使用这个模板，先在GitHub上fork一份我的主题仓库（[Jekyll-Theme-HW311](https://github.com/zixu-w/jekyll-theme-hw311){:target='_blank'}）到你自己的GitHub账户下，然后把重命名成 `<username>.github.io`（用你的GitHub用户名替换 `<username>`）。
 
 在使用这个主题前，还需要编辑 `_config.yml` 来进行配置。需要编辑的条目有：
 {% highlight yaml %}
@@ -197,7 +197,7 @@ protocols:
 
 多语言翻译支持、文章类别等数据配置文件可以在 `_data/` 目录下找到。
 
-Jekyll功能的使用请参考[官方文档](https://jekyllrb.com/docs/){:target='_blank'}[^5]，关于这个主题的具体问题也欢迎在[下面评论区](#disqus_thread)或者[GitHub](https://github.com/LaytonW/jekyll-theme-hw311){:target='_blank'}评论。
+Jekyll功能的使用请参考[官方文档](https://jekyllrb.com/docs/){:target='_blank'}[^5]，关于这个主题的具体问题也欢迎在[下面评论区](#disqus_thread)或者[GitHub](https://github.com/zixu-w/jekyll-theme-hw311){:target='_blank'}评论。
 
 ## 使用自定义域名
 
