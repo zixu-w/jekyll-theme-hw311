@@ -55,8 +55,8 @@ ga_tracking_id: '<ga tracking id>'
 social:
   - name: GitHub
     icon: github
-    username: LaytonW
-    url: https://github.com/LaytonW
+    username: zixu-w
+    url: https://github.com/zixu-w
     desc: Follow me on GitHub
     share: false
 
@@ -113,6 +113,6 @@ protocols:
 
     twitter_image: "/assets/logo.png"
 
-    os_repo: "https://github.com/LaytonW/jekyll-theme-hw311"
+    os_repo: "https://github.com/zixu-w/jekyll-theme-hw311"
     os_rcs_type: "git"
-    os_src: "git@github.com:LaytonW/jekyll-theme-hw311.git"
+    os_src: "git@github.com:zixu-w/jekyll-theme-hw311.git"
