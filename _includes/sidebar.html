@@ -35,9 +35,11 @@
     json: '/{{ page.lang }}/search.json',
     noResultsText: "{% if site.data.i18n['no_result'][page.lang] %}{{ site.data.i18n['no_result'][page.lang] }}{% else %}{{ site.data.i18n['no_result']['default'] }}{% endif %}",
     success: function (json) {
-      for (var i = 0; i < json.length; i++) {
-        if (json[i].html_title != null && json[i].html_title !== "") {
-          json[i].title = json[i].html_title;
+      if (json) {
+        for (var i = 0; i < json.length; i++) {
+          if (json[i].html_title != null && json[i].html_title !== "") {
+            json[i].title = json[i].html_title;
+          }
         }
       }
     }
