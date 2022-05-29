@@ -3,7 +3,8 @@
 # Compiled site
 _site
 
-# Sass garbage
+# Caches
+.jekyll-cache
 .sass-cache
 
 # Bundler
