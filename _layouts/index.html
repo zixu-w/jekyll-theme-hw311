@@ -39,7 +39,15 @@ ref: index
           </a>
         </h2>
         <section class="post-excerpt" itemprop="description">
-          <p>{{ post.content | strip_html | truncate: 120 }}</p>
+          <p>
+          <p>
+             {% if post.custom_excerpt %}
+               {{ post.custom_excerpt | strip_html }}
+             {% else %}
+               {{ post.content | strip_html | truncate: 120 }}
+             {% endif %}
+           </p>
+          <p>
         </section>
         <section class="post-meta">
           <div class="post-date">
