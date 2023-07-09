@@ -8,9 +8,9 @@ insert_final_newline = true
 
 [*.{html,js,scss}]
 charset = utf-8
-indent_style = spaces
+indent_style = space
 indent_size = 2
 
 [*.{md,markdown,yml}]
-indent_style = spaces
+indent_style = space
 indent_size = 2
